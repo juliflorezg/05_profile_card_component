@@ -19,12 +19,24 @@ body {
 	min-height: 100vh;
 
 	background-color: var(--dark-cyan);
-	/* background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg); */
+	background-image: url(./images/bg-pattern-top.svg),
+		url(./images/bg-pattern-bottom.svg);
 	/* background-image: url(./images/bg-pattern-top.svg); */
-	/* background-position: -100% 200%; */
-	/* background-repeat: no-repeat; */
+	background-position: -19vw -69vh, 50vw 49vh;
+	background-repeat: no-repeat, no-repeat;
 
 	font-family: 'Kumbh Sans', sans-serif;
+}
+
+@media (max-width: 1025px) {
+	body {
+		background-position: -50vw -69vh, 50vw 49vh;
+	}
+}
+@media (max-width: 500px) {
+	body {
+		background-position: -207vw -74vh, 36vw 46vh;
+	}
 }
 
 .card {
